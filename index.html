@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>Měření pruhů</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Měření vzdálenosti</h1>
+      <p class="subtitle">Levý / Pravý pruh</p>
+    </header>
+
+    <section class="status-card">
+      <div class="status-row">
+        <span class="label">Stav</span>
+        <span id="statusText" class="value paused">Zastaveno</span>
+      </div>
+      <div class="status-row">
+        <span class="label">Aktuální pruh</span>
+        <span id="currentLane" class="value">—</span>
+      </div>
+      <div class="status-row">
+        <span class="label">Rychlost</span>
+        <span id="speed" class="value">0 km/h</span>
+      </div>
+      <div class="status-row">
+        <span class="label">GPS přesnost</span>
+        <span id="accuracy" class="value">—</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card left">
+        <h2>Levý pruh</h2>
+        <div class="distance" id="leftDistance">0,00 km</div>
+        <div class="time" id="leftTime">00:00:00</div>
+      </div>
+      <div class="stat-card right">
+        <h2>Pravý pruh</h2>
+        <div class="distance" id="rightDistance">0,00 km</div>
+        <div class="time" id="rightTime">00:00:00</div>
+      </div>
+    </section>
+
+    <section class="total">
+      <span>Celkem:</span>
+      <strong id="totalDistance">0,00 km</strong>
+      <span id="totalTime">00:00:00</span>
+    </section>
+
+    <section class="controls">
+      <button id="btnLeft" class="btn lane left" disabled>Levý pruh</button>
+      <button id="btnRight" class="btn lane right" disabled>Pravý pruh</button>
+      <button id="btnStartStop" class="btn startstop">START</button>
+    </section>
+
+    <section class="actions">
+      <button id="btnReset" class="btn secondary">Resetovat vše</button>
+    </section>
+
+    <p class="hint">
+      Tip: Přidej si stránku na plochu telefonu (Sdílet → Přidat na plochu).<br>
+      Pro přesné měření potřebuješ zapnuté GPS a povolení polohy.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
