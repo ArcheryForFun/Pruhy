@@ -3,13 +3,14 @@
   --card: #1a2332;
   --text: #e8eef5;
   --muted: #8b9bb4;
-  --left: #3b82f6;
-  --left-dark: #1d4ed8;
-  --right: #22c55e;
-  --right-dark: #15803d;
+  --left: #f97316;        /* oranĹľovĂˇ */
+  --left-dark: #c2410c;
+  --right: #3b82f6;       /* modrĂˇ */
+  --right-dark: #1d4ed8;
   --danger: #ef4444;
   --start: #10b981;
-  --stop: #f59e0b;
+  --stop: #ef4444;        /* ÄŤervenĂˇ */
+
 }
 
 * {
