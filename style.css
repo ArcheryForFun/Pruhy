@@ -3,13 +3,13 @@
   --card: #1a2332;
   --text: #e8eef5;
   --muted: #8b9bb4;
-  --left: #f97316;        /* oranĹľovĂˇ */
+  --left: #f97316;        /* oranžová */
   --left-dark: #c2410c;
-  --right: #3b82f6;       /* modrĂˇ */
+  --right: #3b82f6;       /* modrá */
   --right-dark: #1d4ed8;
   --danger: #ef4444;
   --start: #10b981;
-  --stop: #ef4444;        /* ÄŤervenĂˇ */
+  --stop: #ef4444;        /* červená */
 }
 
 * {
@@ -186,17 +186,18 @@ header h1 {
   cursor: not-allowed;
 }
 
-.btn.lane.left {
-  background: linear-gradient(180deg, var(--left), var(--left-dark));
+.btn.lane {
+  background: linear-gradient(180deg, #64748b, #475569); /* šedá – neaktivní */
 }
 
-.btn.lane.right {
-  background: linear-gradient(180deg, var(--right), var(--right-dark));
+.btn.lane.left.active {
+  background: linear-gradient(180deg, var(--left), var(--left-dark)); /* oranžová */
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.4);
 }
 
-.btn.lane.active {
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.35);
-  filter: brightness(1.15);
+.btn.lane.right.active {
+  background: linear-gradient(180deg, var(--right), var(--right-dark)); /* modrá */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
 }
 
 .btn.startstop {
@@ -207,7 +208,7 @@ header h1 {
 }
 
 .btn.startstop.running {
-  background: linear-gradient(180deg, var(--stop), #d97706);
+  background: linear-gradient(180deg, #ef4444, #b91c1c); /* celá červená */
 }
 
 .actions {
